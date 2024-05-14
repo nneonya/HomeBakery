@@ -1,0 +1,296 @@
+.landing-section {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(Assets/img/croissant.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.landing-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 569px;
+    gap: 16px;
+}
+
+.landing-heading {
+    text-transform: uppercase;
+    font-size: var(--H1);
+    text-align: center;
+    color: #fff;
+}
+
+.landing-text { 
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.landing-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.landing-buttons-container .button {
+    background-color: var(--accent1);
+    color: #E5D2BC;
+}
+
+.button a {
+    color: #E5D2BC;
+}
+
+.landing-buttons-container .button:nth-child(2) {
+    background-color: var(--accent2);
+}
+
+.about-us-section {
+    padding: 70px 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--background);
+    color: var(--text);
+    gap: 70px;
+}
+
+.about-us-card-container {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.about-us-card {
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-us-card .about-us-heading {
+    font-size: var(--H2);
+    text-align: center;
+    position: relative;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.about-us-card .about-us-heading::after {
+    position: absolute;
+    border-radius: 2px;
+    bottom: -10px;
+    left: 0;
+    background-color: var(--text);
+    width: 100%;
+    height: 2px;
+    content: "";
+}
+
+p.about-us-text {
+    text-align: center;
+    font-size: var(--base-text);
+    text-align: center;
+}
+
+img.about-us-image {
+    width: 382px;
+    height: 255px;
+    border-radius: 18px;
+    border: var(--border);
+}
+
+section.catalogue-section {
+    width: 100%;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--text);
+    background-color: var(--background);
+}
+
+.carousel-wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    height: 1010px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-track {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--background);
+}
+
+.carousel-item-headline {
+    font-size: var(--H2);
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.left-arrow {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translate(0, -50%);
+    background-color: transparent;
+    border: none;
+}
+
+.right-arrow {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    transform: translate(0, -50%);
+    background-color: transparent;
+    border: none;
+}
+
+.left-arrow img, .right-arrow img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.see-all-button.button {
+    background-color: var(--accent1);
+    color: var(--text);
+}
+
+@media (width <= 1265px) {
+    .about-us-card-container {
+        flex-direction: column;
+    }
+
+    .carousel-wrapper {
+        height: 1660px;
+    }
+
+    .products-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+
+    .left-arrow {
+        left: 20px;
+    }
+        
+    
+    .right-arrow {
+        right: 20px;
+    }
+}
+
+@media (width <= 768px) {
+
+    .carousel-wrapper {
+        height: 1560px;
+    }
+
+    .products-container {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .left-arrow {
+        left: 20px;
+    }
+        
+    
+    .right-arrow {
+        right: 20px;
+    }
+}
+
+@media (width < 700px) {
+    .carousel-wrapper {
+        height: 1080px;
+    }
+
+    .landing-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 307px;
+    }
+    
+    .landing-heading {
+        font-size: var(--H2);
+    }
+    
+    .landing-text { 
+        font-size: 20px;
+    }
+}
+
+@media (width < 420px) {
+    .about-us-card {
+        width: 320px;
+    }
+
+    .carousel-item-headline {
+        font-size: var(--H2-mobile);
+    }
+    
+    .about-us-card .about-us-heading {
+        font-size: var(--H2-mobile);
+    }
+    
+    
+    p.about-us-text {
+        font-size: var(--base-text-mobile);
+    }
+    
+    img.about-us-image {
+        width: 320px;
+        height: 186px;
+        border-radius: 18px;
+        border: var(--border);
+    }
+}

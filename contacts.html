@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+    <div class="main-wrapper">
+        <header class="header">
+            <img src="Assets/svg/logo_light.svg" alt="" class="logo">
+            <img src="Assets/svg/burger_light.svg" alt="" class="burger-icon">
+            <nav class="nav">
+                <div class="links-container">
+                    <a href="index.html" class="navlink  link">
+                        <span>Главная</span>
+                    </a>
+                    <a href="products.html" class="navlink link">
+                        <span>Каталог</span>
+                    </a>
+                    <a href="contacts.html" class="navlink link">
+                        <span>Контакты</span>
+                    </a>
+                    <img src="Assets/svg/cross_light.svg" class="nav-close-button svg-button" alt="">
+                </div>
+                <div class="utility-container">
+                    <label class="theme-switch">
+                        <input class="theme-switch-input" type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                    <div class="cart-icon-container">
+                        <a href="cart.html">
+                            <img src="Assets/svg/cart_light.svg" class="cart-icon" alt="">
+                        </a>                        
+                    </div>
+                    <div class="info-container">
+                        <a href="https://yandex.by/maps/-/CDVdNTy0">
+                            <div class="adress link">
+                                <span>Мы на карте</span>                            
+                                <img src="Assets/svg/location_light.svg" alt="">
+                            </div>
+                        </a> 
+                        <span class="phone-number">
+                            <a href="tel:+79991234567" class="phone-link">+7 (999) 123-45-67</a>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="landing-section">
+            <div class="landing-content-wrapper">
+                <h1 class="landing-heading">
+                    ПОЖАЛУЙСТА ПОЗВОНИТЕ НАМ
+                </h1>
+                <span class="landing-text">
+                    Без ваших заказов мы беднеем. Без ваших заказов мы беднеем. Без ваших заказов мы беднеем. Без ваших заказов мы беднеем. Без ваших заказов мы беднеем. Без ваших заказов мы беднеем. Без ваших заказов мы беднеем. 
+                </span>
+                <div class="landing-buttons-container">
+                    <a class="see-all-button button" href="products.html">
+                        Каталог
+                    </a>
+                    <a class="see-all-button button" href="#contacts">
+                        Связаться с нами
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="info-section">
+            <h1 class="section-headline headline">Условия доставки</h1>
+            <div class="info-card-container">
+                <figure class="info-card">
+                    <figcaption class="info-text">Метнемся к вам кабанчиком с вашими булочками, вы не душитесь, набирайте, цифры знаете</figcaption>
+                    <img src="Assets/svg/contacts_delivery_light.svg" alt="" class="info-image">
+                </figure>
+                <figure class="info-card">
+                    <figcaption class="info-text">Метнемся к вам кабанчиком с вашими булочками, вы не душитесь, набирайте, цифры знаете</figcaption>
+                    <img src="Assets/svg/contacts_delivery_light.svg" alt="" class="info-image">
+                </figure>
+                <figure class="info-card">
+                    <figcaption class="info-text">Метнемся к вам кабанчиком с вашими булочками, вы не душитесь, набирайте, цифры знаете</figcaption>
+                    <img src="Assets/svg/contacts_delivery_light.svg" alt="" class="info-image">
+                </figure>
+            </div>
+            <hr>
+            <h1 id="contacts" class="section-headline headline">Наши контакты</h1>
+            <div class="info-card-container">
+                <figure class="info-card">
+                    <img src="Assets/svg/contacts_phone_light.svg" alt="" class="info-image">
+                    <figcaption class="info-text">Метнемся к вам кабанчиком с вашими булочками, вы не душитесь, набирайте, цифры знаете</figcaption>
+                </figure>
+                <figure class="info-card">
+                    <img src="Assets/svg/contacts_location_light.svg" alt="" class="info-image">
+                    <figcaption class="info-text">Метнемся к вам кабанчиком с вашими булочками, вы не душитесь, набирайте, цифры знаете</figcaption>
+                </figure>
+                <figure class="info-card">
+                    <img src="Assets/svg/contacts_clock_light.svg" alt="" class="info-image">
+                    <figcaption class="info-text">Метнемся к вам кабанчиком с вашими булочками, вы не душитесь, набирайте, цифры знаете</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="map">
+            <div style="position:relative;overflow:hidden;"><iframe src="https://yandex.by/map-widget/v1/?ll=27.594007%2C53.918526&mode=whatshere&whatshere%5Bpoint%5D=27.593524%2C53.918899&whatshere%5Bzoom%5D=17&z=17.74" width="1440" height="500" style="position:relative;"></iframe></div>
+        </section>
+    </div>
+    <div class="footer-wrapper">
+        <footer class="footer">
+            <div class="links-and-copyright-container">
+                <div class="links-container">
+                    <a href="index.html" class="foter-link link">
+                        <span>Главная</span>
+                    </a>
+                    <a href="products.html" class="foter-link link">
+                        <span>Каталог</span>
+                    </a>
+                    <a href="contacts.html" class="foter-link link">
+                        <span>Контакты</span>
+                    </a>
+                </div>
+                <span class="copyright">
+                    © 2024 Home bakery, all rights reserved.
+                </span>
+            </div>
+            <div class="company-info">
+                <span class="phone-number">
+                    <a href="tel:+79991234567" class="phone-link">+7 (999) 123-45-67</a>
+                </span>
+                <span class="schedule">
+                    Пн-вс с 9:00 до 22.00
+                </span>
+                <span class="adress">
+                    <a href="https://yandex.by/maps/-/CDVdNTy0">
+                        Москва, Ленинский проспект д. 107 корпус 2
+                    </a>  
+                </span>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
